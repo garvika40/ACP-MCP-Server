@@ -1,0 +1,4 @@
+from Ipython.display import Iframe
+import os
+url =  os.environ.get('DLAI_LOCAL_URL').format(port = 8888)
+IFrame(f"{url}terminal/2", width = 800,height = 600)
